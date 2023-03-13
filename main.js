@@ -1,44 +1,30 @@
 //
-//  JS File
-//  You may remove the code below - it's just boilerplate
+// APP VARIABLES AND DOM ELEMENTS
 //
 
-//
-// Variables
-//
-
-// Constants
-const appID = "app";
-const headingText = "To do. To done. ✅";
-
-// Variables
-
-// DOM Elements
-let appContainer = document.getElementById(appID);
+// The ul for the list of pokemon
+const pokeList = document.querySelector(".poke-entries");
+// The span message to display the index
+const pokeMessage = document.querySelector(".message");
 
 //
-// Functions
+// FUNCTIONS
 //
 
-// Add a heading to the app container
-function inititialise() {
-  // If anything is wrong with the app container then end
-  if (!appContainer) {
-    console.error("Error: Could not find app contianer");
+function listClickHander(event) {
+  // Check if the click event is from a button or something else
+  if (event.target.nodeName !== "BUTTON") {
     return;
   }
 
-  // Create an h1 and add it to our app
-  const h1 = document.createElement("h1");
-  h1.innerText = headingText;
-  appContainer.appendChild(h1);
+  const indexFromDataAttribute = event.target.dataset.pokemon;
 
-  // Init complete
-  console.log("App successfully initialised");
+  pokeMessage.textContent = indexFromDataAttribute;
 }
 
 //
-// Inits & Event Listeners
+// EVENT LISTENERS AND INITIALISION
 //
 
-inititialise();
+// Add the submit form handler
+pokeList.addEventListener("click", listClickHander);
