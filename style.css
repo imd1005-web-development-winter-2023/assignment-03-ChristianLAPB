@@ -154,7 +154,7 @@ main ul.pokemon li button:active {
   transform: translateY(0);
 }
 
-@media screen and (min-width: 500px){
+@media screen and (min-width: 400px){
   main ul.pokemon
   {
     list-style-type: none;
@@ -165,7 +165,7 @@ main ul.pokemon li button:active {
   }
 }
 
-@media screen and (min-width: 700px){
+@media screen and (min-width: 600px){
   main ul.pokemon
   {
     list-style-type: none;
@@ -176,7 +176,7 @@ main ul.pokemon li button:active {
   }
 }
 
-@media screen and (min-width: 900px) {
+@media screen and (min-width: 800px) {
   main ul.pokemon
   {
     list-style-type: none;
@@ -198,7 +198,7 @@ main ul.pokemon li button:active {
   }
 }
 
-@media screen and (min-width: 1300px){
+@media screen and (min-width: 1400px){
   main ul.pokemon
   {
     list-style-type: none;
@@ -208,7 +208,7 @@ main ul.pokemon li button:active {
     grid-template-rows: repeat(15, 1fr);
   }
 }
-@media screen and (min-width: 1500px){
+@media screen and (min-width: 1700px){
   main ul.pokemon
   {
     list-style-type: none;
