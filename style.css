@@ -105,6 +105,7 @@ main ul.pokemon-1 li {
   border-radius: 20px;
   background-color: #4699FF;
   text-align: center;
+  align-items: center;
   font-size: 1.4rem;
   width: 200px;
   height: 200px;
