@@ -99,7 +99,7 @@ main ul.pokemon
 
 main ul.pokemon li, 
 main ul.pokemon-1 li {
-  margin: 10px 38px;
+  margin: auto;
   border: 5px solid #29738F;
   padding: 20px;
   border-radius: 20px;
