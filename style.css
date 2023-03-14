@@ -100,7 +100,7 @@ main ul.pokemon
 main ul.pokemon li, 
 main ul.pokemon-1 li {
   margin: auto;
-  border: 5px solid #29738F;
+  border: 5px solid #6096AA;
   padding: 20px;
   border-radius: 20px;
   background-color: #4699FF;
@@ -116,7 +116,7 @@ main ul.pokemon-1 li {
 }
 
 main ul.pokemon li button{
-  background-color: #29738F;
+  background-color: #6096AA;
   border-radius: 8px;
   border-style: none;
   box-sizing: border-box;
