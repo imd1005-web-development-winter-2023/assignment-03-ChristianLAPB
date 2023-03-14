@@ -55,6 +55,14 @@ input[type="submit"] {
   box-shadow: 0 0 15px 4px rgba(0, 0, 0, 0.06);
 }
 
+.poke-sprite {
+
+  align-items: center;
+  height: 100px;
+  width: auto;
+
+}
+
 body {
   color: #003049;
   font-family: sans-serif;
