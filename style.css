@@ -69,10 +69,12 @@ body {
   background-color: #fdf0d5;
 
   background: url("./images/Pokemon Logo.png") center no-repeat;
+  width: auto;
+  height: auto;
   background-attachment: fixed; 
   background: cover;
   background-size: cover;
-  min-height: 100vh;
+  /* min-height: 100vh; */
 
   justify-content: center;
   align-items: center;
@@ -90,19 +92,22 @@ main span {
 main ul.pokemon
 {
   list-style-type: none;
-  margin: auto;
   display: grid;
   grid-template-columns: repeat(1, 1fr);
   grid-template-rows: repeat(72, 1fr);
 }
 
+main li.pokemon {
+  margin: auto;
+}
+
 main ul.pokemon li, 
 main ul.pokemon-1 li {
-  margin: auto;
-  border: 5px solid #6096AA;
+  margin: 15px 38px;
+  border: 5px solid #B8E9F5;
   padding: 20px;
   border-radius: 20px;
-  background-color: #4699FF;
+  background-color: #149BEB;
   text-align: center;
   align-items: center;
   font-size: 1.4rem;
@@ -113,13 +118,13 @@ main ul.pokemon-1 li {
 }
 
 main ul.pokemon li button{
-  background-color: #6096AA;
+  background-color: #3B5CA8;
   border-radius: 8px;
   border-style: none;
   box-sizing: border-box;
   color: #fff;
   cursor: pointer;
-  font-size: 16px;
+  font-size: 20px;
   font-weight: 700;
   line-height: 1.5;
   margin: 10px 0;
@@ -149,30 +154,68 @@ main ul.pokemon li button:active {
   transform: translateY(0);
 }
 
-@media screen and (min-width: 600px){
+@media screen and (min-width: 500px){
+  main ul.pokemon
+  {
+    list-style-type: none;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(72, 1fr);
+  }
+}
+
+@media screen and (min-width: 700px){
   main ul.pokemon
   {
     list-style-type: none;
     margin: auto;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(4, 1fr);
+    grid-template-rows: repeat(31, 1fr);
   }
 }
 
-@media screen and (min-width: 800px) {
-  .poke-entries {
-    display: flex;
-    flex-direction: column;
+@media screen and (min-width: 900px) {
+  main ul.pokemon
+  {
+    list-style-type: none;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(24, 1fr);
   }
+}
 
+@media screen and (min-width: 1100px){
+  main ul.pokemon
+  {
+    list-style-type: none;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(18, 1fr);
+  }
+}
+
+@media screen and (min-width: 1300px){
+  main ul.pokemon
+  {
+    list-style-type: none;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(15, 1fr);
+  }
+}
+@media screen and (min-width: 1500px){
   main ul.pokemon
   {
     list-style-type: none;
     margin: auto;
     display: grid;
     grid-template-columns: repeat(6, 1fr);
-    grid-template-rows: repeat(8, 1fr);
+    grid-template-rows: repeat(12, 1fr);
   }
 }
 
