@@ -57,7 +57,7 @@ input[type="submit"] {
 
 .poke-sprite {
 
-  align-items: center;
+  margin: 0px 30px;
   height: 80px;
   width: auto;
 
