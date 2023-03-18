@@ -27,4 +27,4 @@ function listClickHander(event) {
 //
 
 // Add the submit form handler
-pokeList.addEventListener("click", listClickHander);
+pokemon.addEventListener("click", listClickHander);
