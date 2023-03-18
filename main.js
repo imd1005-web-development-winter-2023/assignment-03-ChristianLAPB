@@ -13,11 +13,11 @@ function listClickHander(event) {
 
 pokeList.addEventListener("click", listClickHander);
 
-let poke1 = document.querySelector(".poke1");
+let poke1 = document.querySelector("poke1");
 let changebtn = document.querySelector(".changeBtn");
 
 poke1.addEventListener("click", () => {
-  poke1.classList.remove("poke1");
+  poke1.classList.remove("main ul.pokemon li button");
   poke1.classList.add("changeBtn");
 });
 
