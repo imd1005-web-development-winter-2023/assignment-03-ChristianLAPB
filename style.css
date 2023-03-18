@@ -156,7 +156,7 @@ main ul.pokemon li button:active {
 @media screen and (max-width: 450px){
   main ul.pokemon li, 
   main ul.pokemon-1 li {
-    margin: 16px 10px 0px 10px;
+    margin: 0px;
   }
   main ul.pokemon
   {
