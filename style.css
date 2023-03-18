@@ -156,7 +156,7 @@ main ul.pokemon li button:active {
 @media screen and (max-width: 450px){
   main ul.pokemon li, 
   main ul.pokemon-1 li {
-    margin: 0px;
+    margin: 1px 0px;
     border: 5px solid #B8E9F5;
     padding: 20px;
     border-radius: 20px;
@@ -170,8 +170,8 @@ main ul.pokemon li button:active {
     transition: all;
   }
   .poke-sprite {
-    margin: 0px 10px;
-    height: 80px;
+    margin: 0px 35px;
+    height: 60px;
     width: auto;
   }
   main ul.pokemon
