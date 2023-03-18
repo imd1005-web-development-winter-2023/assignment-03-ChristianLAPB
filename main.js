@@ -3,7 +3,7 @@
 //
 
 // The ul for the list of pokemon
-const pokeList = document.querySelector(".poke-entries");
+const pokeList = document.querySelector(".pokemon");
 // The span message to display the index
 const pokeMessage = document.querySelector(".message");
 

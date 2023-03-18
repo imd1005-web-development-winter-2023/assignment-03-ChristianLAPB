@@ -8,10 +8,6 @@
   align-items: stretch;
 }
 
-header {
-  padding: 10px 20px;
-}
-
 h1{
   text-align: center;
 }
@@ -30,30 +26,6 @@ p{
   grid-row-start: 1;
   grid-row-end: 4;
 } 
-
-input[type="text"] {
-  grid-column-start: 1;
-  grid-column-end: 3;
-
-  border: none;
-  border-radius: 10px;
-  padding: 10px;
-
-  box-shadow: 0 0 15px 4px rgba(0, 0, 0, 0.06);
-}
-
-input[type="submit"] {
-  background-color: #003049;
-  border: none;
-  color: white;
-  font-weight: bold;
-  padding: 10px 10px;
-  text-decoration: none;
-  cursor: pointer;
-
-  border-radius: 10px;
-  box-shadow: 0 0 15px 4px rgba(0, 0, 0, 0.06);
-}
 
 .poke-sprite {
 
@@ -82,7 +54,6 @@ body {
 
 main h1 {
   font-size: 2rem;
-  padding: 30px;
 }
 
 main span {
@@ -154,14 +125,18 @@ main ul.pokemon li button:active {
   transform: translateY(0);
 }
 
-@media screen and (min-width: 400px){
+@media screen and (max-width: 448px){
+  main ul.pokemon li, 
+  main ul.pokemon-1 li {
+    margin: 16px 10px 0px 10px;
+  }
   main ul.pokemon
   {
     list-style-type: none;
     margin: auto;
     display: grid;
-    grid-template-columns: repeat(1, 1fr);
-    grid-template-rows: repeat(72, 1fr);
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(31, 1fr);
   }
 }
 
