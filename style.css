@@ -8,6 +8,10 @@
   align-items: stretch;
 }
 
+header span {
+  font-weight: bold;
+}
+
 h1{
   text-align: center;
 }
