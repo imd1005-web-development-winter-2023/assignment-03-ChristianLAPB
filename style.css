@@ -159,7 +159,7 @@ header {
   opacity: 0.9;
 
   border-radius: 8px;
-  background-color: #fff;
+  background-color: #33b5e5;
   top: 10px;
   right: calc(-3 * var(--contaier-width) / 4);
 
