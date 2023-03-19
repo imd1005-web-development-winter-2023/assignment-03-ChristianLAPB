@@ -94,7 +94,48 @@ main ul.pokemon-1 li {
   transition: all;
 }
 
-main ul.pokemon li button{
+input[type="checkbox"]{
+  display: none;
+}
+
+.bubble{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #3B5CA8;
+  border-radius: 8px;
+  border-style: none;
+  box-sizing: border-box;
+  color: #fff;
+  cursor: pointer;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 1.5;
+  margin: 10px 0;
+  max-width: none;
+  min-height: 44px;
+  min-width: 10px;
+  outline: none;
+  overflow: hidden;
+  padding: 9px 20px 8px;
+  position: relative;
+  text-align: center;
+  text-transform: none;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  width: 100%;
+  content: "Caught";
+}
+
+input:checked ~ .bubble::after {
+  opacity: 0.50;
+  transform: translateY(-2px);
+}
+
+
+
+/* main ul.pokemon li button{
   background-color: #3B5CA8;
   border-radius: 8px;
   border-style: none;
@@ -128,7 +169,7 @@ main ul.pokemon li button{
 main ul.pokemon li button:active {
   box-shadow: none;
   transform: translateY(0);
-}
+} */
 
 @media screen and (max-width: 450px){
   main ul.pokemon li, 

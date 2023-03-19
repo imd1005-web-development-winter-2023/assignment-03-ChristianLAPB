@@ -13,7 +13,7 @@ function listClickHander(event) {
 
 pokeList.addEventListener("click", listClickHander);
 
-let poke1 = document.querySelector("poke1");
+let poke1 = document.querySelector("bubble");
 let changebtn = document.querySelector(".changeBtn");
 
 poke1.addEventListener("click", () => {
