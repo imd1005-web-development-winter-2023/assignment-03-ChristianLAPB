@@ -143,7 +143,7 @@ header {
 .notification {
   position: absolute;
 
-  width: calc(3 * var(--contaier-width) / 4);
+  width: calc(3 * 400px / 4);
   height: 60px;
 
   display: flex;
@@ -155,7 +155,7 @@ header {
   border-radius: 8px;
   background-color: #33b5e5;
   top: 10px;
-  right: calc(-3 * var(--contaier-width) / 4);
+  right: calc(-3 * 400px / 4);
 
   color: #fff;
 
