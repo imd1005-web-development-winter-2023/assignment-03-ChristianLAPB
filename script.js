@@ -98,13 +98,3 @@ function deletewanted(wantedId) {
   renderwanteds();
   localStorage.setItem('wanteds', JSON.stringify(wanteds));
 }
-
-function showNotification(msg) {
-  notificationEl.innerHTML = msg;
-
-  notificationEl.classList.add('notif-enter');
-
-  setTimeout(() => {
-    notificationEl.classList.remove('notif-enter');
-  }, 2000);
-}
