@@ -10,7 +10,6 @@ renderwanteds();
 
 form.addEventListener('submit', function (event) {
   event.preventDefault();
-
   savewanted();
   renderwanteds();
   localStorage.setItem('wanteds', JSON.stringify(wanteds));
@@ -25,8 +24,6 @@ function savewanted() {
 
   if (isEmpty) {
     showNotification("Input is empty");
-  } else if (isDuplicate) {
-    showNotification('That person already exists!');
   } else {
     if (EditwantedId >= 0) {
       wanteds = wanteds.map((wanted, index) => ({
