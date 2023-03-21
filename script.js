@@ -80,7 +80,6 @@ wantedsListEl.addEventListener('click', (event) => {
   const action = target.dataset.action;
 
   action === 'check' && checkwanted(wantedId);
-  action === 'edit' && editwanted(wantedId);
   action === 'delete' && deletewanted(wantedId);
 });
 
@@ -94,10 +93,6 @@ function checkwanted(wantedId) {
   localStorage.setItem('wanteds', JSON.stringify(wanteds));
 }
 
-function editwanted(wantedId) {
-  wantedInput.value = wanteds[wantedId].value;
-  EditwantedId = wantedId;
-}
 
 function deletewanted(wantedId) {
   wanteds = wanteds.filter((wanted, index) => index !== wantedId);
