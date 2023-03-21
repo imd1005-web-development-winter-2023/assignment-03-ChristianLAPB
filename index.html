@@ -1,45 +1,37 @@
+<!-- Mobile mode is designed to have just the list fit the phone screen so it looks like a datapad -->
+<!-- Used this tutorial to help with the to do list functionality https://www.youtube.com/watch?v=i1pxPSl9ZHc -->
+<!-- Bridge image retrieved from https://scifi.stackexchange.com/questions/114518/imperial-star-destroyer-exact-bridge-location -->
+<!-- Empire logo image retrieved from https://star-wars-canon.fandom.com/wiki/Galactic_Empire -->
+
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <!-- Set the page title -->
-    <title>Assignment 03</title>
-
-    <!-- Set the charset we're using to UTF-8 -->
+    <title>Assignment 3</title>
     <meta charset="UTF-8" />
-
-    <!-- Set the screens default zoom / scale to 1 -->
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-
-    <!-- We are using a CSS Reset file to standardize browser default css -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css" />
     <link rel="stylesheet" href="reset.css" />
-
-    <!-- This is where all of our awesome CSS code goes -->
     <link rel="stylesheet" href="style.css" />
-
-    <!-- Set the Favicon  -->
-    <link rel="icon" href="./images/favicon/rocket.svg" type="image/svg+xml" />
   </head>
   <body>
-    <!--
-
-      ADD YOUR ASSIGNMENT 03 CODE
-
-      YOU MAY REMOVE THE BOILERPLATE CODE BELOW
-
-      IMPORTANT CHECKLIST:
-
-      - Are users able to create and delete to do list items?
-      - Have you set a favicon? (included - but it's a rocket)
-      - Do you have a css reset file? (included)
-      - Has a team member conducted a code review and left a GitHub Issue in your repo?
-      - Have you conducted a code review and left a GitHub Issue on your team member's repo?
-
-    -->
-    <main>
-      <div id="app"></div>
-    </main>
-
-    <!-- This is where we add our awesome JavaScript code -->
-    <script src="./main.js"></script>
+    <div class="container">
+      <header>
+        <div class="header">
+          <h2>Empire's Most Wanted</h2>
+        </div>
+        <div class="new-wanted">
+          <form id="wantedform">
+            <input type="text" name="newwanted" id="newwanted" placeholder="Add a Wanted Person to the List..." />
+            <button type="submit">
+              <i class="bi bi-plus-circle-fill"></i>
+            </button>
+          </form>
+        </div>
+      </header>
+      <div id="wanteds-list">
+      </div>
+    </div>
+    <script src="./script.js"></script>
   </body>
 </html>
